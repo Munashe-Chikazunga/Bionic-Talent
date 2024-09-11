@@ -3,106 +3,99 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f5f5f5; /* Light background for overall look */
 }
 
-/* Styling for h1 (Main Header) */
-h1 {
+h1, h2 {
     font-family: 'Roboto Slab', serif;
-    color: white; /* White font for header */
-    text-align: left; /* Align header text to the left */
-    padding-left: 20px;
-    font-size: 36px; /* Larger font size for main heading */
-    margin: 0;
-    padding-top: 20px;
+    color: #ab3c3c; /* Heading color (Red) */
+    text-align: center;
 }
 
-/* First Section (Services) */
-.services-section {
-    background-color: #314b57;
+a {
+    color: #ab3c3c; /* Link color (Red) */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Section */
+header {
+    background-color: #314b57; /* Dark blue/green background */
     padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
+/* Services Section */
 .services-container {
     display: flex;
-    justify-content: flex-start; /* Align services to the left */
-    flex-wrap: wrap;
-    max-width: 1000px; /* Limit width of the container */
+    justify-content: space-around; /* Even spacing between service items */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 20px;
-    margin-left: 20px;
 }
 
 .service-item {
     text-align: center;
-    width: 150px; /* Smaller icons */
-    margin-right: 20px;
+    width: 150px; /* Fixed width for consistency */
 }
 
 .service-item img {
     border-radius: 50%;
-    width: 120px; /* Reduce icon size */
+    width: 120px; /* Icons size */
     height: 120px;
 }
 
 .service-item p {
-    color: white;
+    color: white; /* White text under icons */
     margin-top: 10px;
-    font-size: 14px; /* Slightly smaller font size */
+    font-size: 16px;
     font-weight: bold;
 }
 
-/* Second Section (Map) */
-.map-section {
-    background-color: #314b57;
-    text-align: right;
-    padding: 20px;
-}
-
+/* Map Styling */
 .map-container {
-    max-width: 400px;
-    margin-right: 20px;
+    margin-top: 20px;
+    text-align: center;
 }
 
 .map-container img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
-/* Main Content Section */
+/* Main Content Styling */
 main {
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    background-color: #ffffff; /* White background for main content */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for content section */
+    border-radius: 8px; /* Rounded corners for a soft look */
 }
 
 /* Service Area Section */
 .service-area {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
     margin-bottom: 40px;
-    padding: 20px 0;
-}
-
-.service-area-content {
-    flex: 1;
-    text-align: left;
 }
 
 .service-area img {
-    max-width: 500px;
-    margin-left: 20px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
     border-radius: 8px;
 }
 
 .links a {
     display: block;
     margin: 5px 0;
-    color: #ab3c3c;
-    font-weight: bold;
+    color: #ab3c3c; /* Link color */
 }
 
 /* Helpful Articles Section */
@@ -115,6 +108,7 @@ main {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap; /* Wrap articles for responsiveness */
 }
 
 article {
@@ -122,9 +116,10 @@ article {
     text-align: left;
     padding: 10px;
     background-color: #f5f5f5;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-bottom: 20px;
+    max-width: 30%; /* Each article takes up about 30% */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between articles on smaller screens */
 }
 
 article img {
@@ -136,27 +131,21 @@ article img {
 article p {
     font-size: 14px;
     margin: 10px 0;
-    color: #333;
+    color: #333; /* Darker text for readability */
 }
 
 article a {
     font-weight: bold;
-    color: #ab3c3c;
+    color: #ab3c3c; /* Red links in articles */
 }
 
-/* Responsive Layout for Smaller Screens */
+/* Responsive: Stacking Articles Vertically for Small Screens */
 @media screen and (max-width: 768px) {
-    .services-container {
+    .articles {
         flex-direction: column;
-        align-items: center;
     }
 
-    .service-item {
-        margin-right: 0;
-        margin-bottom: 20px;
+    article {
+        width: 100%;
     }
-
-    .map-container {
-        margin-right: 0;
-        margin-top: 20px;
-        max-width:
+}
