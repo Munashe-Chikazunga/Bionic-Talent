@@ -1,0 +1,123 @@
+/* Global settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font and color definitions */
+body {
+    font-family: "Helvetica", Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Container for the entire page */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+}
+
+/* Header styles */
+header h1 {
+    font-family: 'Roboto Slab', serif;
+    color: #314b57; /* Dark Blue/Green */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Circular images with links */
+.circular-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.link-item {
+    text-align: center;
+}
+
+.link-item img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.link-item p {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    color: #314b57;
+    margin-top: 10px;
+}
+
+/* Service area section */
+.service-area {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.service-area h2 {
+    font-family: 'Roboto Slab', serif;
+    color: #ab3c3c; /* Red */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.service-content {
+    display: flex;
+    gap: 20px;
+}
+
+.service-content img {
+    width: 50%;
+    height: auto;
+}
+
+.service-content p {
+    font-size: 1em;
+    color: #314b57;
+}
+
+.service-area p a {
+    color: #ab3c3c;
+    margin-right: 20px;
+}
+
+/* Articles section */
+.articles {
+    margin-top: 40px;
+    text-align: left;
+}
+
+.articles h2 {
+    font-family: 'Roboto Slab', serif;
+    color: #ab3c3c; /* Red */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.articles .article {
+    display: inline-block;
+    width: 30%;
+    margin-right: 2%;
+}
+
+.articles .article img {
+    width: 100%;
+    height: auto;
+}
+
+.articles .article p {
+    font-size: 0.9em;
+    color: #314b57;
+    margin: 10px 0;
+}
+
+.articles .article a {
+    font-size: 0.9em;
+    color: #ab3c3c;
+    text-decoration: none;
+}
