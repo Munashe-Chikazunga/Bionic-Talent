@@ -41,7 +41,7 @@ header h1 {
     flex-wrap: nowrap; /* Prevents stacking vertically */
     max-width: 1200px;
     margin: 0 auto;
-    gap: 30px; 
+    gap: 40px; 
 }
 
 .service img, .map img {
