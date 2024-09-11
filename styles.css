@@ -17,67 +17,49 @@ h1 {
     padding-top: 20px;
 }
 
-/* Styling for h2 (Subheadings) */
-h2 {
-    font-family: 'Roboto Slab', serif;
-    color: #ab3c3c; /* Darker red for subheadings */
-    text-align: left; /* Align subheadings to the left */
-    font-size: 24px; /* Smaller than h1 */
-    margin-bottom: 20px;
-}
-
-a {
-    color: #ab3c3c;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
 /* Header Section */
 header {
     background-color: #314b57;
     padding: 20px 0;
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align items to the top */
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Services Section */
 .services-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 800px;
-    margin: 0 auto;
+    justify-content: flex-start; /* Align services to the left */
+    flex-wrap: wrap;
+    max-width: 70%; /* Limit width so that map can fit beside it */
     padding: 20px;
 }
 
 .service-item {
     text-align: center;
-    width: 200px;
+    width: 150px; /* Smaller icons */
     margin-right: 20px;
 }
 
 .service-item img {
     border-radius: 50%;
-    width: 180px; /* Increase icon size */
-    height: 180px;
+    width: 120px; /* Reduce icon size */
+    height: 120px;
 }
 
 .service-item p {
     color: white;
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 14px; /* Slightly smaller font size */
     font-weight: bold;
 }
 
 /* Map Styling */
 .map-container {
-    max-width: 400px;
-    margin-left: 40px;
+    max-width: 30%; /* Adjust width to fit beside services */
+    margin-left: 20px;
+    text-align: right;
 }
 
 .map-container img {
@@ -175,4 +157,24 @@ article a {
 
     .map-container {
         margin-left: 0;
-        margin-top: 
+        margin-top: 20px;
+        max-width: 100%;
+    }
+
+    .service-area {
+        flex-direction: column;
+    }
+
+    .service-area img {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
+    .articles {
+        flex-direction: column;
+    }
+
+    article {
+        width: 100%;
+    }
+}
