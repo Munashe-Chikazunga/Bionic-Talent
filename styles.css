@@ -74,6 +74,12 @@ h2 {
 }
 
 /* Helpful Articles Section Styles */
+.helpful-articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .articles {
   display: flex;
   flex-wrap: wrap;
