@@ -23,7 +23,7 @@ header {
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items to the top */
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -32,32 +32,32 @@ header {
     display: flex;
     justify-content: flex-start; /* Align services to the left */
     flex-wrap: wrap;
-    max-width: 70%; /* Limit width so that map can fit beside it */
+    max-width: 60%; /* Reduce width so the map can fit beside it */
     padding: 20px;
 }
 
 .service-item {
     text-align: center;
-    width: 150px; /* Smaller icons */
+    width: 140px; /* Further reduce the size of service items */
     margin-right: 20px;
 }
 
 .service-item img {
     border-radius: 50%;
-    width: 120px; /* Reduce icon size */
-    height: 120px;
+    width: 110px; /* Further reduce the icon size */
+    height: 110px;
 }
 
 .service-item p {
     color: white;
     margin-top: 10px;
-    font-size: 14px; /* Slightly smaller font size */
+    font-size: 13px; /* Slightly smaller font size */
     font-weight: bold;
 }
 
 /* Map Styling */
 .map-container {
-    max-width: 30%; /* Adjust width to fit beside services */
+    max-width: 35%; /* Increase map width a bit to balance layout */
     margin-left: 20px;
     text-align: right;
 }
