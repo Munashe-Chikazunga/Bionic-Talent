@@ -3,178 +3,97 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
 }
 
-/* Styling for h1 (Main Header) */
-h1 {
+h1, h2 {
     font-family: 'Roboto Slab', serif;
-    color: white; /* White font for header */
-    text-align: left; /* Align header text to the left */
-    padding-left: 20px;
-    font-size: 36px; /* Larger font size for main heading */
-    margin: 0;
-    padding-top: 20px;
+    color: #ab3c3c;
 }
 
-/* Header Section */
+a {
+    color: #ab3c3c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 header {
     background-color: #314b57;
     padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
 }
 
-/* Services Section */
-.services-container {
+.header-container {
     display: flex;
-    justify-content: flex-start; /* Align services to the left */
-    flex-wrap: wrap;
-    max-width: 60%; /* Reduce width so the map can fit beside it */
-    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.service-item {
+.service {
     text-align: center;
-    width: 140px; /* Further reduce the size of service items */
-    margin-right: 20px;
 }
 
-.service-item img {
+.service img {
     border-radius: 50%;
-    width: 110px; /* Further reduce the icon size */
-    height: 110px;
+    width: 100px;
+    height: 100px;
 }
 
-.service-item p {
+.service p {
     color: white;
     margin-top: 10px;
-    font-size: 13px; /* Slightly smaller font size */
-    font-weight: bold;
 }
 
-/* Map Styling */
-.map-container {
-    max-width: 35%; /* Increase map width a bit to balance layout */
-    margin-left: 20px;
-    text-align: right;
-}
-
-.map-container img {
-    width: 100%;
-    height: auto;
-}
-
-/* Main Content Section */
 main {
     max-width: 1200px;
-    margin: 40px auto;
+    margin: 0 auto;
     padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
 }
 
-/* Service Area Section */
 .service-area {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
     margin-bottom: 40px;
-    padding: 20px 0;
-}
-
-.service-area-content {
-    flex: 1;
-    text-align: left;
 }
 
 .service-area img {
-    max-width: 500px;
-    margin-left: 20px;
-    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
 }
 
 .links a {
     display: block;
     margin: 5px 0;
-    color: #ab3c3c;
-    font-weight: bold;
 }
 
-/* Helpful Articles Section */
 .helpful-articles {
     text-align: center;
-    margin-bottom: 40px;
 }
 
 .articles {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 article {
-    flex: 1;
+    width: 30%;
     text-align: left;
-    padding: 10px;
-    background-color: #f5f5f5;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    margin-bottom: 20px;
 }
 
 article img {
     width: 100%;
-    height: auto;
-    border-radius: 4px;
 }
 
-article p {
-    font-size: 14px;
-    margin: 10px 0;
-    color: #333;
-}
-
-article a {
-    font-weight: bold;
-    color: #ab3c3c;
-}
-
-/* Responsive Layout for Smaller Screens */
 @media screen and (max-width: 768px) {
-    .services-container {
+    .articles {
         flex-direction: column;
         align-items: center;
     }
 
-    .service-item {
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
-    .map-container {
-        margin-left: 0;
-        margin-top: 20px;
-        max-width: 100%;
-    }
-
-    .service-area {
-        flex-direction: column;
-    }
-
-    .service-area img {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-
-    .articles {
-        flex-direction: column;
-    }
-
     article {
-        width: 100%;
+        width: 80%;
     }
 }
