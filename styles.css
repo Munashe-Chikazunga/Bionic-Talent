@@ -6,7 +6,7 @@ body {
     background-color: #f5f5f5;
 }
 
-h1, h2 {
+h1 {
     font-family: 'Roboto Slab', serif;
     color: white; /* Header font color changed to white */
     text-align: left; /* Align header to the left */
