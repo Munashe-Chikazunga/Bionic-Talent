@@ -6,15 +6,8 @@ body {
     color: #333;
 }
 
-h1, h2 {
+h1, h2, h3 {
     font-family: 'Roboto Slab', serif;
-    color: #ab3c3c;
-}
-
-h3 {
-    font-family: 'Roboto Slab', serif;
-    color: #314b57;
-    font-size: 1.1rem;
 }
 
 a {
@@ -45,9 +38,16 @@ header h1 {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-wrap: nowrap; /* Prevent wrapping */
+    flex-wrap: nowrap; /* Prevents stacking vertically */
     max-width: 1200px;
     margin: 0 auto;
+    gap: 30px; 
+}
+
+.service img, .map img {
+    border-radius: 50%;
+    width: 150px; /* Ensure uniform size for map and service icons */
+    height: 150px;
 }
 
 .service {
@@ -56,9 +56,9 @@ header h1 {
 }
 
 .service img {
-    border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    height: 180px;
+    margin-bottom: 10px; /* Space between icon and text */
 }
 
 .map {
@@ -66,9 +66,8 @@ header h1 {
 }
 
 .map img {
-    width: 150px; /* Make sure the map is the same size as the icons */
-    height: 150px;
-    border-radius: 10px;
+    width: 180px; /* Same size as the service icons */
+    height: 180px;
 }
 
 /* Service Area Section */
