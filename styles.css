@@ -25,40 +25,43 @@ a:hover {
 header {
     background-color: #314b57; /* Dark blue/green background */
     padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Services Section */
 .services-container {
     display: flex;
-    justify-content: space-evenly; /* Even spacing between service items */
+    justify-content: space-around; /* Even spacing between service items */
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px; /* Adds padding around the services */
+    padding: 20px;
 }
 
 .service-item {
     text-align: center;
+    width: 150px; /* Fixed width for consistency */
 }
 
 .service-item img {
     border-radius: 50%;
-    width: 150px; /* Larger icons */
-    height: 150px;
+    width: 120px; /* Icons size */
+    height: 120px;
 }
 
 .service-item p {
     color: white; /* White text under icons */
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
 /* Map Styling */
 .map-container {
-    max-width: 300px;
-    margin-left: 20px; /* Spacing between services and map */
-    align-self: flex-start; /* Aligns map to top right of services */
+    margin-top: 20px;
+    text-align: center;
 }
 
 .map-container img {
@@ -69,7 +72,7 @@ header {
 /* Main Content Styling */
 main {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
     background-color: #ffffff; /* White background for main content */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for content section */
