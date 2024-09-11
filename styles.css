@@ -44,6 +44,7 @@ header h1 {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .service {
@@ -54,11 +55,13 @@ header h1 {
 
 .service img {
     border-radius: 50%;
-    width: 150px;
+    width: 180px;
     height: 150px;
+    margin-bottom: 10px;
 }
 
 .map {
+    width: 60%;
     margin-top: 20px;
     text-align: center;
 }
