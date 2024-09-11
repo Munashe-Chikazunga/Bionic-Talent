@@ -6,13 +6,24 @@ body {
     background-color: #f5f5f5;
 }
 
-h1, h2 {
+/* Styling for h1 (Main Header) */
+h1 {
     font-family: 'Roboto Slab', serif;
     color: white; /* White font for header */
     text-align: left; /* Align header text to the left */
     padding-left: 20px;
+    font-size: 36px; /* Larger font size for main heading */
     margin: 0;
     padding-top: 20px;
+}
+
+/* Styling for h2 (Subheadings) */
+h2 {
+    font-family: 'Roboto Slab', serif;
+    color: #ab3c3c; /* Darker red for subheadings */
+    text-align: left; /* Align subheadings to the left */
+    font-size: 24px; /* Smaller than h1 */
+    margin-bottom: 20px;
 }
 
 a {
@@ -29,9 +40,9 @@ header {
     background-color: #314b57;
     padding: 20px 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Services Section */
@@ -164,24 +175,4 @@ article a {
 
     .map-container {
         margin-left: 0;
-        margin-top: 20px;
-        max-width: 100%;
-    }
-
-    .service-area {
-        flex-direction: column;
-    }
-
-    .service-area img {
-        margin-left: 0;
-        margin-top: 20px;
-    }
-
-    .articles {
-        flex-direction: column;
-    }
-
-    article {
-        width: 100%;
-    }
-}
+        margin-top: 
