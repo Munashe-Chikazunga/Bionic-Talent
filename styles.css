@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: 'Roboto Slab', 'Helvetica', 'Arial', sans-serif;
+    font-family: 'Helvetica', 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f9f9f9;
@@ -53,14 +53,11 @@ header h1 {
     text-align: center;
 }
 
-.map {
-    margin-top: 20px;
-}
-
 .map img {
     border-radius: 10px;
     width: 250px;
     height: 150px;
+    margin-top: 20px;
 }
 
 /* Service Area Section */
@@ -68,113 +65,82 @@ header h1 {
     padding: 40px 20px;
     background-color: #fff;
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 0 auto; /* Center align for the content area */
 }
 
 .service-area h2 {
-    text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #314b57;
+    text-align: center;
 }
 
 .service-content {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two columns: 1 for image, 1 for text */
     gap: 40px;
-    max-width: 100%;
+    align-items: center; /* Vertically center the items */
 }
 
 .service-content img {
-    width: 400px; /* Fixed width for the image */
+    width: 100%;
+    max-width: 400px; /* Fixed width for larger screens */
     height: auto;
     border-radius: 10px;
-    flex-shrink: 0; /* Prevents the image from shrinking */
 }
 
-.service-content p {
+.service-content-text {
     font-size: 1.1rem;
     color: #555;
     line-height: 1.8;
-    margin-bottom: 20px;
-    text-align: justify;
 }
 
-.service-content ul {
+.service-content-text p {
+    margin-bottom: 20px;
+}
+
+.service-content-text ul {
     list-style: none;
     padding: 0;
 }
 
-.service-content ul li {
+.service-content-text ul li {
     margin: 10px 0;
 }
 
-.service-content ul li a {
+.service-content-text ul li a {
     font-weight: bold;
     color: #ab3c3c;
 }
 
-/* Helpful Articles Section */
-.helpful-articles {
-    padding: 40px 20px;
-    background-color: #f9f9f9;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.helpful-articles h2 {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 20px;
-}
-
-.articles {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-}
-
-.article {
-    max-width: 300px;
-    text-align: center;
-}
-
-.article img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.article p {
-    margin: 10px 0;
-}
-
-.article a {
-    display: block;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #ab3c3c;
-}
-
-/* Responsive Styles */
+/* Mobile Responsive */
 @media screen and (max-width: 768px) {
-    .service-content {
+    .services {
         flex-direction: column;
+    }
+
+    .service img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .map img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .service-content {
+        grid-template-columns: 1fr; /* Stack the image and text vertically */
         text-align: center;
     }
 
     .service-content img {
         width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .articles {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .article {
         max-width: 100%;
     }
+
+    .service-content-text {
+        padding: 20px 0;
+    }
 }
+
