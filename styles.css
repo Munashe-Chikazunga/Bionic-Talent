@@ -1,113 +1,158 @@
-/* General styles */
+/* General Styling */
 body {
-  font-family: 'Roboto Slab', serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  background-color: #F5F5F5;
-  padding: 20px;
-}
-
-h1,
-h2 {
-  margin: 0;
-  padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background for overall look */
 }
 
 h1 {
-  font-size: 2.5em;
-  text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: #fff; /* Heading color (Red) */
+    text-align: center;
 }
 
 h2 {
-  font-size: 1.5em;
-  margin-bottom: 10px;
+    font-family: 'Roboto Slab', serif;
+    color: #ab3c3c; /* Heading color (Red) */
+    text-align: center;
 }
 
-.services-section,
-.map-section,
-.service-area,
-.helpful-articles {
-  padding: 20px;
+
+a {
+    color: #ab3c3c; /* Link color (Red) */
+    text-decoration: none;
 }
 
-/* Services Section Styles */
-.services-section {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header Section */
+header {
+    background-color: #314b57; /* Dark blue/green background */
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Services Section */
+.services-container {
+    display: flex;
+    justify-content: space-around; /* Even spacing between service items */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .service-item {
-  text-align: center;
-  margin: 10px;
+    text-align: center;
+    width: 150px; /* Fixed width for consistency */
 }
 
-.service-img {
-  width: 100px;
-  height: 100px;
+.service-item img {
+    border-radius: 50%;
+    width: 120px; /* Icons size */
+    height: 120px;
 }
 
-/* Map Section Styles */
+.service-item p {
+    color: white; /* White text under icons */
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Map Styling */
 .map-container {
-  text-align: center;
+    margin-top: 20px;
+    text-align: center;
 }
 
-.map-img {
-  width: 100%;
+.map-container img {
+    max-width: 100%;
+    height: auto;
 }
 
-/* Service Area Section Styles */
-.service-area-content {
-  text-align: center;
+/* Main Content Styling */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* White background for main content */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for content section */
+    border-radius: 8px; /* Rounded corners for a soft look */
+}
+
+/* Service Area Section */
+.service-area {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-area img {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
 .links a {
-  color: #007bff;
-  text-decoration: none;
+    display: block;
+    margin: 5px 0;
+    color: #ab3c3c; /* Link color */
 }
 
-.links a:hover {
-  text-decoration: underline;
-}
-
-/* Helpful Articles Section Styles */
+/* Helpful Articles Section */
 .helpful-articles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .articles {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Wrap articles for responsiveness */
 }
 
-.articles article {
-  width: 30%;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+article {
+    flex: 1;
+    text-align: left;
+    padding: 10px;
+    background-color: #f5f5f5;
+    max-width: 30%; /* Each article takes up about 30% */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between articles on smaller screens */
 }
 
-.articles article img {
-  width: 100%;
-  margin-bottom: 10px;
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
 }
 
-.articles article p {
-  margin-bottom: 10px;
+article p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #333; /* Darker text for readability */
 }
 
-.articles article a {
-  color: #007bff;
-  text-decoration: none;
+article a {
+    font-weight: bold;
+    color: #ab3c3c; /* Red links in articles */
 }
 
-.articles article a:hover {
-  text-decoration: underline;
+/* Responsive: Stacking Articles Vertically for Small Screens */
+@media screen and (max-width: 768px) {
+    .articles {
+        flex-direction: column;
+    }
+
+    article {
+        width: 100%;
+    }
 }
