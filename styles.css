@@ -1,167 +1,179 @@
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
+    margin: 0;
     font-family: Helvetica, Arial, sans-serif;
     line-height: 1.6;
-    padding: 0;
-    background-color: #f6f6f6;
+    color: #333;
 }
 
-/* Main Header */
-.main-header {
-    background-color: #314b57;
-    color: white;
+h1, h2 {
     font-family: 'Roboto Slab', serif;
-    text-align: center;
-    padding: 20px;
-    font-size: 2rem;
+    color: #ab3c3c;
+}
+
+h3 {
+    font-family: 'Roboto Slab', serif;
+    color: #314b57;
+    font-size: 1.1rem;
+}
+
+a {
+    color: #ab3c3c;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Header Section */
 header {
     background-color: #314b57;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
 }
 
-.service-icons {
-    display: flex;
-    gap: 20px;
-}
-
-.icon {
+.service {
+    flex: 1;
     text-align: center;
-    color: white;
+    margin: 10px;
 }
 
-.icon img {
-    width: 100px;
-    height: 100px;
+.service img {
     border-radius: 50%;
+    width: 150px;
+    height: 150px;
 }
 
-.map-container img {
-    width: 300px;
-    height: auto;
+.map {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.map img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 10px;
 }
 
 /* Service Area Section */
 .service-area {
-    background-color: white;
-    padding: 40px;
+    padding: 40px 20px;
     text-align: center;
 }
 
 .service-area h2 {
-    font-family: 'Roboto Slab', serif;
-    color: #ab3c3c;
+    font-size: 1.8rem;
     margin-bottom: 20px;
 }
 
-.service-area img {
-    max-width: 100%;
+.service-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.service-content img {
+    width: 100%;
+    max-width: 500px;
     height: auto;
     margin-bottom: 20px;
 }
 
-.service-area p {
-    font-size: 1.2rem;
+.service-content p {
+    text-align: left;
+    padding: 0 20px;
     margin-bottom: 20px;
 }
 
-.service-area a {
-    color: #ab3c3c;
-    text-decoration: none;
-    margin-right: 10px;
+.service-content ul {
+    list-style: none;
+    padding: 0;
 }
 
-.service-area a:hover {
-    text-decoration: underline;
+.service-content ul li {
+    margin: 10px 0;
 }
 
-/* Articles Section */
+.service-content ul li a {
+    font-weight: bold;
+}
+
+/* Helpful Articles Section */
+.helpful-articles {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.helpful-articles h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
 .articles {
-    background-color: white;
-    padding: 40px;
-    text-align: center;
-}
-
-.articles h2 {
-    font-family: 'Roboto Slab', serif;
-    color: #ab3c3c;
-    margin-bottom: 40px;
-}
-
-.article-container {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .article {
-    background-color: #f6f6f6;
-    padding: 20px;
-    width: 30%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .article img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 .article p {
-    margin: 20px 0;
-    font-size: 1rem;
+    padding: 0 10px;
 }
 
 .article a {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
     color: #ab3c3c;
-    text-decoration: none;
 }
 
-.article a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .article {
-        width: 45%;
-    }
-
-    header {
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .services {
         flex-direction: column;
-        text-align: center;
     }
 
-    .map-container {
-        margin-top: 20px;
+    .service img {
+        width: 100px;
+        height: 100px;
     }
-}
 
-@media (max-width: 480px) {
-    .article {
+    .map img {
         width: 100%;
     }
 
-    .service-icons {
-        flex-wrap: wrap;
-        justify-content: center;
+    .articles {
+        flex-direction: column;
+        gap: 10px;
     }
 
-    .icon img {
-        width: 80px;
-        height: 80px;
+    .article {
+        max-width: 100%;
     }
 }
