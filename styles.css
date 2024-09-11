@@ -1,13 +1,16 @@
 /* General Styles */
 body {
     margin: 0;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'Helvetica', 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
+    background-color: #f9f9f9;
 }
 
+/* Typography */
 h1, h2, h3 {
     font-family: 'Roboto Slab', serif;
+    color: #314b57;
 }
 
 a {
@@ -27,53 +30,41 @@ header {
 }
 
 header h1 {
-    font-family: 'Roboto Slab', serif; /* Ensure correct font */
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 20px;
 }
 
-/* Align the services and the map horizontally in one row */
-.services {
+header .services {
     display: flex;
-    justify-content: space-between; /* Make sure everything fits on one line */
+    justify-content: space-between;
     align-items: center;
-    gap: 30px; /* Add spacing between icons */
-    max-width: 1000px; /* Adjust max width to fit everything on one line */
+    max-width: 1000px;
     margin: 0 auto;
+    gap: 30px;
 }
 
 .service img, .map img {
     border-radius: 50%;
-    width: 150px; /* Ensure uniform size for map and service icons */
+    width: 150px;
     height: 150px;
 }
 
 .service {
     text-align: center;
-    margin: 10px;
-}
-
-.service img {
-    border-radius: 50%; /* Keep the service icons circular */
-    width: 150px; /* Adjust size to fit all in one line */
-    height: 150px;
-}
-}
-
-.map {
-    text-align: center;
 }
 
 .map img {
-    border-radius: 10px; /* Remove full circle, make the map rectangular */
-    width: 250px; /* Make the map wider */
-    height: 150px; /* Keep height consistent with service icons */
+    border-radius: 10px;
+    width: 250px;
+    height: 150px;
 }
+
 /* Service Area Section */
 .service-area {
     padding: 40px 20px;
     text-align: center;
+    background-color: #fff;
 }
 
 .service-area h2 {
@@ -110,6 +101,7 @@ header h1 {
 
 .service-content ul li a {
     font-weight: bold;
+    color: #ab3c3c;
 }
 
 /* Helpful Articles Section */
@@ -125,7 +117,7 @@ header h1 {
 
 .articles {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -139,7 +131,7 @@ header h1 {
 
 .article img {
     width: 100%;
-    height: 200px; /* Uniform height for all article images */
+    height: 200px;
     object-fit: cover;
     border-radius: 10px;
 }
@@ -158,7 +150,7 @@ header h1 {
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
     .services {
-        flex-direction: column; /* Stack vertically on smaller screens */
+        flex-direction: column;
     }
 
     .service img {
@@ -177,5 +169,19 @@ header h1 {
 
     .article {
         max-width: 100%;
+    }
+}
+
+/* Wide Screen Background */
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: #e0e0e0; /* Gray background for wider screens */
+    }
+
+    .content-frame {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 40px;
     }
 }
