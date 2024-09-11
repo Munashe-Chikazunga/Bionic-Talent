@@ -14,18 +14,19 @@ body {
 header {
     background-color: #3a505b;
     padding: 20px;
-    text-align: center;
 }
 
 .service-icons {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .service-icons img {
     width: 80px;
-    height: 80px;
+    height: auto;
 }
 
 .map {
@@ -36,6 +37,9 @@ header {
 .service-area {
     background-color: #f6f6f6;
     padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -54,6 +58,7 @@ header {
 .service-area p {
     font-size: 1.1rem;
     margin-bottom: 20px;
+    max-width: 800px;
 }
 
 .service-area a {
@@ -78,11 +83,22 @@ header {
     margin-bottom: 40px;
 }
 
+/* Flexbox for articles */
+.article-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
 .article {
-    display: inline-block;
+    background-color: #f6f6f6;
+    padding: 20px;
     width: 30%;
-    margin: 0 1.5%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .article img {
@@ -92,6 +108,7 @@ header {
 
 .article p {
     margin: 20px 0;
+    font-size: 1rem;
 }
 
 .article a {
@@ -101,4 +118,17 @@ header {
 
 .article a:hover {
     text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .article {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .article {
+        width: 100%;
+    }
 }
