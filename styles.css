@@ -3,15 +3,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f5f5f5; /* Light background for overall look */
 }
 
 h1, h2 {
     font-family: 'Roboto Slab', serif;
-    color: #ab3c3c;
+    color: #ab3c3c; /* Heading color (Red) */
+    text-align: center;
 }
 
 a {
-    color: #ab3c3c;
+    color: #ab3c3c; /* Link color (Red) */
     text-decoration: none;
 }
 
@@ -21,42 +23,45 @@ a:hover {
 
 /* Header Section */
 header {
-    background-color: #314b57;
+    background-color: #314b57; /* Dark blue/green background */
     padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Services Section */
 .services-container {
     display: flex;
-    justify-content: space-between; /* Equal spacing between service items */
+    justify-content: space-around; /* Even spacing between service items */
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px; /* Adds padding for spacing */
+    padding: 20px;
 }
 
 .service-item {
     text-align: center;
+    width: 150px; /* Fixed width for consistency */
 }
 
 .service-item img {
     border-radius: 50%;
-    width: 150px; /* Larger icons */
-    height: 150px;
+    width: 120px; /* Icons size */
+    height: 120px;
 }
 
 .service-item p {
-    color: white;
+    color: white; /* White text under icons */
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
 /* Map Styling */
 .map-container {
-    max-width: 300px;
-    margin-left: 20px; /* Ensure space between services and map */
-    align-self: flex-start; /* Aligns the map to the top-right of the services */
+    margin-top: 20px;
+    text-align: center;
 }
 
 .map-container img {
@@ -64,13 +69,17 @@ header {
     height: auto;
 }
 
-/* Service Area Section */
+/* Main Content Styling */
 main {
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 20px;
+    background-color: #ffffff; /* White background for main content */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for content section */
+    border-radius: 8px; /* Rounded corners for a soft look */
 }
 
+/* Service Area Section */
 .service-area {
     text-align: center;
     margin-bottom: 40px;
@@ -80,11 +89,13 @@ main {
     width: 100%;
     max-width: 600px;
     margin-bottom: 20px;
+    border-radius: 8px;
 }
 
 .links a {
     display: block;
     margin: 5px 0;
+    color: #ab3c3c; /* Link color */
 }
 
 /* Helpful Articles Section */
@@ -95,9 +106,9 @@ main {
 
 .articles {
     display: flex;
-    justify-content: space-between; /* Adds space between articles */
+    justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Wrap articles for responsiveness */
 }
 
 article {
@@ -105,18 +116,27 @@ article {
     text-align: left;
     padding: 10px;
     background-color: #f5f5f5;
-    max-width: 30%; /* Ensures the articles take up 30% of the width */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for a more defined look */
+    max-width: 30%; /* Each article takes up about 30% */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    margin-bottom: 20px; /* Space between articles on smaller screens */
 }
 
 article img {
     width: 100%;
     height: auto;
+    border-radius: 4px;
 }
 
 article p {
     font-size: 14px;
     margin: 10px 0;
+    color: #333; /* Darker text for readability */
+}
+
+article a {
+    font-weight: bold;
+    color: #ab3c3c; /* Red links in articles */
 }
 
 /* Responsive: Stacking Articles Vertically for Small Screens */
