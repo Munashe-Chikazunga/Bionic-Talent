@@ -36,12 +36,12 @@ header h1 {
 /* Align the services and the map horizontally in one row */
 .services {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     flex-wrap: nowrap; /* Prevents stacking vertically */
     max-width: 1200px;
     margin: 0 auto;
-    gap: 60px; 
+    gap: 45x; 
 }
 
 .service img, .map img {
