@@ -8,10 +8,11 @@ body {
 
 h1, h2 {
     font-family: 'Roboto Slab', serif;
-    color: white; /* Header font color changed to white */
-    text-align: center;
+    color: white; /* White font for header */
+    text-align: left; /* Align header text to the left */
+    padding-left: 20px;
     margin: 0;
-    padding: 20px 0;
+    padding-top: 20px;
 }
 
 a {
@@ -28,9 +29,9 @@ header {
     background-color: #314b57;
     padding: 20px 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 /* Services Section */
@@ -38,33 +39,34 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 0 auto;
+    padding: 20px;
 }
 
 .service-item {
     text-align: center;
-    width: 180px; /* Increase the size of service containers */
+    width: 200px;
     margin-right: 20px;
 }
 
 .service-item img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 180px; /* Increase icon size */
+    height: 180px;
 }
 
 .service-item p {
     color: white;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 /* Map Styling */
 .map-container {
-    margin-left: 20px;
-    max-width: 300px;
+    max-width: 400px;
+    margin-left: 40px;
 }
 
 .map-container img {
@@ -72,7 +74,7 @@ header {
     height: auto;
 }
 
-/* Main Content Styling */
+/* Main Content Section */
 main {
     max-width: 1200px;
     margin: 40px auto;
@@ -97,7 +99,7 @@ main {
 }
 
 .service-area img {
-    max-width: 600px;
+    max-width: 500px;
     margin-left: 20px;
     border-radius: 8px;
 }
@@ -152,11 +154,18 @@ article a {
 @media screen and (max-width: 768px) {
     .services-container {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .service-item {
+        margin-right: 0;
+        margin-bottom: 20px;
     }
 
     .map-container {
         margin-left: 0;
         margin-top: 20px;
+        max-width: 100%;
     }
 
     .service-area {
