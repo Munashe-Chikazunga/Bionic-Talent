@@ -8,6 +8,15 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #f6f6f6;
+    padding: 0;
+}
+
+/* Wrapper for content frame */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Header Section */
@@ -35,12 +44,13 @@ header {
 
 /* Service Area Section */
 .service-area {
-    background-color: #f6f6f6;
+    background-color: #fff;
     padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border-bottom: 1px solid #ccc;
 }
 
 .service-area h2 {
@@ -73,8 +83,9 @@ header {
 
 /* Articles Section */
 .articles {
-    padding: 40px;
+    padding: 40px 15px;
     background-color: #fff;
+    border-bottom: 1px solid #ccc;
 }
 
 .articles h2 {
@@ -99,6 +110,7 @@ header {
     flex-direction: column;
     align-items: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .article img {
@@ -120,15 +132,34 @@ header {
     text-decoration: underline;
 }
 
-/* Responsive Design */
+/* Background for wide screens */
+body {
+    background-color: #f6f6f6;
+}
+
+@media (min-width: 1200px) {
+    body {
+        background-color: #dcdcdc;
+    }
+}
+
+/* Responsive Design for smaller screens */
 @media (max-width: 768px) {
     .article {
         width: 45%;
+    }
+
+    .service-icons {
+        flex-wrap: wrap;
     }
 }
 
 @media (max-width: 480px) {
     .article {
         width: 100%;
+    }
+
+    .service-icons img {
+        width: 60px;
     }
 }
