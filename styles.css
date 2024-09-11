@@ -3,17 +3,17 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Light background for overall look */
+    background-color: #f5f5f5;
 }
 
 h1, h2 {
     font-family: 'Roboto Slab', serif;
-    color: #ab3c3c; /* Heading color (Red) */
+    color: #ab3c3c;
     text-align: center;
 }
 
 a {
-    color: #ab3c3c; /* Link color (Red) */
+    color: #ab3c3c;
     text-decoration: none;
 }
 
@@ -23,17 +23,17 @@ a:hover {
 
 /* Header Section */
 header {
-    background-color: #314b57; /* Dark blue/green background */
+    background-color: #314b57;
     padding: 20px 0;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 /* Services Section */
 .services-container {
     display: flex;
-    justify-content: space-around; /* Even spacing between service items */
+    justify-content: space-around; /* Ensures even spacing for services */
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -42,17 +42,18 @@ header {
 
 .service-item {
     text-align: center;
-    width: 150px; /* Fixed width for consistency */
+    width: 150px;
+    margin-right: 20px; /* Add space between services */
 }
 
 .service-item img {
     border-radius: 50%;
-    width: 120px; /* Icons size */
-    height: 120px;
+    width: 150px;
+    height: 150px;
 }
 
 .service-item p {
-    color: white; /* White text under icons */
+    color: white;
     margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
@@ -60,12 +61,13 @@ header {
 
 /* Map Styling */
 .map-container {
-    margin-top: 20px;
-    text-align: center;
+    margin-left: 40px;
+    max-width: 400px; /* Smaller map width for laptop screens */
+    align-self: flex-start; /* Keep map aligned to the top */
 }
 
 .map-container img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -74,9 +76,9 @@ main {
     max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff; /* White background for main content */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for content section */
-    border-radius: 8px; /* Rounded corners for a soft look */
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 /* Service Area Section */
@@ -95,7 +97,7 @@ main {
 .links a {
     display: block;
     margin: 5px 0;
-    color: #ab3c3c; /* Link color */
+    color: #ab3c3c;
 }
 
 /* Helpful Articles Section */
@@ -108,7 +110,7 @@ main {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap; /* Wrap articles for responsiveness */
+    flex-wrap: nowrap; /* Prevent articles from wrapping on laptops */
 }
 
 article {
@@ -116,10 +118,10 @@ article {
     text-align: left;
     padding: 10px;
     background-color: #f5f5f5;
-    max-width: 30%; /* Each article takes up about 30% */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    border-radius: 8px; /* Rounded corners */
-    margin-bottom: 20px; /* Space between articles on smaller screens */
+    max-width: 30%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 article img {
@@ -131,16 +133,25 @@ article img {
 article p {
     font-size: 14px;
     margin: 10px 0;
-    color: #333; /* Darker text for readability */
+    color: #333;
 }
 
 article a {
     font-weight: bold;
-    color: #ab3c3c; /* Red links in articles */
+    color: #ab3c3c;
 }
 
-/* Responsive: Stacking Articles Vertically for Small Screens */
+/* Responsive Layout for Smaller Screens (Tablet and Mobile) */
 @media screen and (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+    }
+
+    .map-container {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+
     .articles {
         flex-direction: column;
     }
@@ -149,3 +160,4 @@ article a {
         width: 100%;
     }
 }
+
