@@ -8,8 +8,9 @@ body {
 
 h1, h2 {
     font-family: 'Roboto Slab', serif;
-    color: #ab3c3c;
+    color: white; /* Header font color changed to white */
     text-align: center;
+    margin: 0;
 }
 
 a {
@@ -26,14 +27,14 @@ header {
     background-color: #314b57;
     padding: 20px 0;
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 /* Services Section */
 .services-container {
     display: flex;
-    justify-content: space-around; /* Ensures even spacing for services */
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
@@ -42,28 +43,27 @@ header {
 
 .service-item {
     text-align: center;
-    width: 150px;
-    margin-right: 20px; /* Add space between services */
+    width: 180px; /* Increase the size of service containers */
 }
 
 .service-item img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 180px; /* Increase size of service icons */
+    height: 180px;
 }
 
 .service-item p {
-    color: white;
+    color: white; /* White text under icons */
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 /* Map Styling */
 .map-container {
     margin-left: 40px;
-    max-width: 400px; /* Smaller map width for laptop screens */
-    align-self: flex-start; /* Keep map aligned to the top */
+    max-width: 400px;
+    align-self: flex-start;
 }
 
 .map-container img {
@@ -83,7 +83,7 @@ main {
 
 /* Service Area Section */
 .service-area {
-    text-align: center;
+    text-align: left; /* Align text to the left */
     margin-bottom: 40px;
 }
 
@@ -110,7 +110,7 @@ main {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: nowrap; /* Prevent articles from wrapping on laptops */
+    flex-wrap: nowrap; /* Prevent articles from wrapping */
 }
 
 article {
@@ -141,7 +141,7 @@ article a {
     color: #ab3c3c;
 }
 
-/* Responsive Layout for Smaller Screens (Tablet and Mobile) */
+/* Responsive Layout for Smaller Screens */
 @media screen and (max-width: 768px) {
     .services-container {
         flex-direction: column;
@@ -160,4 +160,3 @@ article a {
         width: 100%;
     }
 }
-
