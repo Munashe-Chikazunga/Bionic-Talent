@@ -19,42 +19,44 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Header Section */
 header {
     background-color: #314b57;
     padding: 20px 0;
 }
 
+/* Services Section */
 .services-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Equal spacing between service items */
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 20px; /* Adds padding for spacing */
 }
 
 .service-item {
     text-align: center;
-    margin-bottom: 20px;
 }
 
 .service-item img {
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 150px; /* Larger icons */
+    height: 150px;
 }
 
 .service-item p {
     color: white;
     margin-top: 10px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 /* Map Styling */
 .map-container {
-    max-width: 600px;
-    margin: 20px auto;
-    text-align: right; /* Aligns the map image to the right */
+    max-width: 300px;
+    margin-left: 20px; /* Ensure space between services and map */
+    align-self: flex-start; /* Aligns the map to the top-right of the services */
 }
 
 .map-container img {
@@ -62,13 +64,13 @@ header {
     height: auto;
 }
 
+/* Service Area Section */
 main {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-/* Service Area Section */
 .service-area {
     text-align: center;
     margin-bottom: 40px;
@@ -85,7 +87,7 @@ main {
     margin: 5px 0;
 }
 
-/* Flexbox for Horizontal Layout of Articles */
+/* Helpful Articles Section */
 .helpful-articles {
     text-align: center;
     margin-bottom: 40px;
@@ -93,7 +95,7 @@ main {
 
 .articles {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Adds space between articles */
     gap: 20px;
     flex-wrap: wrap;
 }
@@ -103,7 +105,8 @@ article {
     text-align: left;
     padding: 10px;
     background-color: #f5f5f5;
-    max-width: 30%; /* Ensure articles don't take up too much space */
+    max-width: 30%; /* Ensures the articles take up 30% of the width */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for a more defined look */
 }
 
 article img {
@@ -116,6 +119,7 @@ article p {
     margin: 10px 0;
 }
 
+/* Responsive: Stacking Articles Vertically for Small Screens */
 @media screen and (max-width: 768px) {
     .articles {
         flex-direction: column;
