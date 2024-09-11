@@ -84,21 +84,22 @@ header h1 {
 }
 
 .service-content {
-    max-width: 900px;
-    margin: 0 auto;
+   text-align: left;
+    padding: 0 20px;
+    margin-bottom: 30px;
 }
 
 .service-content img {
-    width: 100%;
+   width: 100%;
     max-width: 500px;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px; 
 }
 
 .service-content p {
     text-align: left;
     padding: 0 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .service-content ul {
@@ -107,7 +108,7 @@ header h1 {
 }
 
 .service-content ul li {
-    margin: 10px 0;
+   margin: 15px 0;
 }
 
 .service-content ul li a {
@@ -127,32 +128,35 @@ header h1 {
 
 .articles {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Center the articles */
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
 }
 
 .article {
     flex: 1;
-    max-width: 300px;
+    max-width: 280px; /* Increase width slightly */
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .article img {
-    width: 100%;
-    height: auto;
+   width: 100%;
+    height: 200px; /* Uniform height for all article images */
+    object-fit: cover; /* Ensure images are cropped uniformly */
     border-radius: 10px;
 }
 
 .article p {
-    padding: 0 10px;
+  padding: 0 10px;
+    margin-bottom: 10px;
 }
 
 .article a {
-    display: block;
+     display: block;
     margin-top: 10px;
     font-weight: bold;
+    padding: 10px 0; /* Add padding to the link */
     color: #ab3c3c;
 }
 
