@@ -26,20 +26,26 @@ header {
 }
 
 .service-icons {
-    display: flex;
+display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .service-icons img {
-    width: 80px;
+    width: 120px;
     height: auto;
+}
+.map-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 20px; /* Optional space adjustment */
 }
 
 .map {
-    width: 100px;
+    width: 150px;  /* Increased map size */
+    height: auto;
 }
 
 /* Service Area Section */
