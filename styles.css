@@ -36,12 +36,11 @@ header h1 {
 /* Align the services and the map horizontally in one row */
 .services {
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Make sure everything fits on one line */
     align-items: center;
-    flex-wrap: nowrap; /* Prevents stacking vertically */
-    max-width: 1200px;
+    gap: 30px; /* Add spacing between icons */
+    max-width: 1000px; /* Adjust max width to fit everything on one line */
     margin: 0 auto;
-    gap: 45x; 
 }
 
 .service img, .map img {
@@ -56,9 +55,10 @@ header h1 {
 }
 
 .service img {
-    width: 180px;
-    height: 180px;
-    margin-bottom: 10px; /* Space between icon and text */
+    border-radius: 50%; /* Keep the service icons circular */
+    width: 150px; /* Adjust size to fit all in one line */
+    height: 150px;
+}
 }
 
 .map {
@@ -66,10 +66,10 @@ header h1 {
 }
 
 .map img {
-    width: 180px; /* Same size as the service icons */
-    height: 180px;
+    border-radius: 10px; /* Remove full circle, make the map rectangular */
+    width: 250px; /* Make the map wider */
+    height: 150px; /* Keep height consistent with service icons */
 }
-
 /* Service Area Section */
 .service-area {
     padding: 40px 20px;
