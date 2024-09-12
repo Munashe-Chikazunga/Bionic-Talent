@@ -123,21 +123,21 @@ main {
 .service-area-content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     gap: 20px;
 }
 
 /* Image Styling */
 .service-area-img {
-    width: 30%; /* Image on the left side */
-    max-width: 300px;
+    width: 40%; /* Image on the left side */
+    max-width: 400px;
     border-radius: 8px;
 }
 
 /* Text Styling */
 .service-area-text {
-    width: 70%; /* Text aligned to the right */
-    text-align: right; /* Right-align the text */
+    width: 60%; /* Text aligned to the right */
+    text-align: left; /* Right-align the text */
 }
 
 .service-area-text p {
@@ -149,6 +149,10 @@ main {
     display: inline-block;
     margin: 5px 0;
     color: #ab3c3c;
+}
+
+.links a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive for smaller screens */
