@@ -6,7 +6,7 @@ body {
     background-color: #f5f5f5; /* Light background for overall look */
 }
 
-h1, h2 {
+h2 {
     font-family: 'Roboto Slab', serif;
     color: #ab3c3c; /* Red heading color */
     text-align: center;
