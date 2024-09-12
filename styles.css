@@ -137,7 +137,7 @@ main {
 
 /* Text Styling */
 .service-area-text {
-    width: 60%; /* Text aligned to the right */
+  flex: 1;
     text-align: left; /* Right-align the text */
 }
 
