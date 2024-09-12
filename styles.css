@@ -129,8 +129,9 @@ main {
 
 /* Image Styling */
 .service-area-img {
-    width: 40%; /* Image on the left side */
-    max-width: 400px;
+    width: 100%; /* Image on the left side */
+    max-width: 350px;
+    height: auto;
     border-radius: 8px;
 }
 
