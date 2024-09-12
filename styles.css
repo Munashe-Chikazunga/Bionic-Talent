@@ -105,62 +105,64 @@ main {
     color: #ab3c3c; /* Link color */
 }
 
-/* Service Area Heading */
-.service-area-heading {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Service Area Content */
-.service-area-content {
-    display: flex;
-    justify-content: center;
+/* Service Area Section */
+.service-area {
     padding: 20px;
-    background-color: #ffffff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
     margin-bottom: 40px;
 }
 
-/* Container for image and text */
-.service-area-container {
+/* Heading Styling */
+.service-area h2 {
+    font-size: 36px; /* Bigger font size for the heading */
+    color: #ab3c3c;
+    text-align: left; /* Align the heading to the left */
+    margin-bottom: 20px;
+}
+
+/* Service Area Content Flexbox */
+.service-area-content {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     gap: 20px;
-    max-width: 1200px;
-    flex-wrap: wrap; /* Allow wrapping for small screens */
 }
 
 /* Image Styling */
 .service-area-img {
-    width: 100%;
+    width: 50%; /* Image on the left side */
     max-width: 600px;
     border-radius: 8px;
 }
 
 /* Text Styling */
 .service-area-text {
-    max-width: 600px;
+    width: 50%; /* Text aligned to the right */
+    text-align: right; /* Right-align the text */
+}
+
+.service-area-text p {
     font-size: 16px;
     color: #333;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .links a {
-    display: block;
+    display: inline-block;
     margin: 5px 0;
     color: #ab3c3c;
 }
 
-/* Responsive Behavior */
+/* Responsive for smaller screens */
 @media screen and (max-width: 768px) {
-    .service-area-container {
+    .service-area-content {
         flex-direction: column; /* Stack image and text on smaller screens */
     }
 
-    .service-area-img {
-        margin-bottom: 10px;
+    .service-area-img, .service-area-text {
+        width: 100%; /* Full width for both image and text on small screens */
+    }
+
+    .service-area-text {
+        text-align: left; /* Align text to the left on mobile */
     }
 }
 
