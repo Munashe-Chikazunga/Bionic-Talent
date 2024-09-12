@@ -129,14 +129,14 @@ main {
 
 /* Image Styling */
 .service-area-img {
-    width: 50%; /* Image on the left side */
+    width: 30%; /* Image on the left side */
     max-width: 300px;
     border-radius: 8px;
 }
 
 /* Text Styling */
 .service-area-text {
-    width: 50%; /* Text aligned to the right */
+    width: 70%; /* Text aligned to the right */
     text-align: right; /* Right-align the text */
 }
 
