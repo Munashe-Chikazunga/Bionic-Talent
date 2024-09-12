@@ -9,17 +9,15 @@ body {
 h2 {
     font-family: 'Roboto Slab', serif;
     color: #ab3c3c; /* Red heading color */
-    text-align: center;
+    text-align: left;
     margin: 20px 0;
+    font-size: 28px; 
 }
 
 h1 {
     font-size: 36px; /* Larger size for the main heading */
     color: white;
-}
-
-h2 {
-    font-size: 28px; /* Sub-heading size */
+    text-align: left;
 }
 
 a {
