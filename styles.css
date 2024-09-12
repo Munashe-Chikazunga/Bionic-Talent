@@ -105,6 +105,63 @@ main {
     color: #ab3c3c; /* Link color */
 }
 
+/* Service Area Heading */
+.service-area-heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Service Area Content */
+.service-area-content {
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Flexbox for image and text */
+.service-area-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+/* Image Styling */
+.service-area-img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+/* Text Styling */
+.service-area-text {
+    max-width: 600px;
+    font-size: 16px;
+    color: #333;
+}
+
+.links a {
+    display: block;
+    margin: 5px 0;
+    color: #ab3c3c; /* Red link color */
+}
+
+/* Responsive for smaller screens */
+@media screen and (max-width: 768px) {
+    .service-area-container {
+        flex-direction: column; /* Stack image and text vertically on small screens */
+    }
+
+    .service-area-img {
+        margin-bottom: 10px;
+    }
+}
+
 /* Helpful Articles Section */
 .helpful-articles {
     text-align: center;
