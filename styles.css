@@ -109,7 +109,7 @@ main {
 
 .service-area-img {
     width: 100%;
-    max-width: 300px; /* Ensure the image has a maximum width */
+    max-width: auto; /* Ensure the image has a maximum width */
     height: auto;
     border-radius: 8px;
 }
