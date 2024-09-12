@@ -12,6 +12,16 @@ h1, h2 {
     text-align: center;
 }
 
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
 a {
     color: #ab3c3c; /* Link color (Red) */
     text-decoration: none;
@@ -49,6 +59,7 @@ header {
     border-radius: 50%;
     width: 120px; /* Icons size */
     height: 120px;
+margin-bottom: 10px;
 }
 
 .service-item p {
