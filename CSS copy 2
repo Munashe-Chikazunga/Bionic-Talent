@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heating and Air Conditioning Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <section class="services-section">
+            <h1>HEATING AND AIR CONDITIONING SERVICES</h1>
+            <div class="services-container">
+                <!-- Service Item: Heating -->
+                <div class="service-item">
+                    <img src="heating.png" alt="Heating" class="service-img">
+                    <p>HEATING</p>
+                </div>
+                <!-- Service Item: Cooling -->
+                <div class="service-item">
+                    <img src="cooling.png" alt="Cooling" class="service-img">
+                    <p>COOLING</p>
+                </div>
+                <!-- Service Item: Specials -->
+                <div class="service-item">
+                    <img src="specials.png" alt="Specials" class="service-img">
+                    <p>SPECIALS</p>
+                </div>
+                <!-- Service Item: Plumbing -->
+                <div class="service-item">
+                    <img src="plumber-arlington-tx.png" alt="For Plumbing" class="service-img">
+                    <p>FOR PLUMBING</p>
+                </div>
+            </div>
+        </section>
+        <section class="map-section">
+            <div class="map-container">
+                <img src="sub_map.jpg" alt="Map showing service area" class="map-img">
+            </div>
+        </section>
+    </header>
+
+    <main>
+
+        <!-- Service Area Heading -->
+<section class="service-area">
+    <h2>OUR SERVICE AREA</h2>
+    <div class="service-area-content">
+        <!-- Image Section -->
+        <img src="our-service-area.jpg" alt="City View of Service Area" class="service-area-img">
+        <!-- Text Section -->
+        <div class="service-area-text">
+            <p>Minuteman Heating & Air serves Fort Worth, Arlington, Aledo, Alvarado, and the surrounding areas with first quality services you can rely upon. Our certified technicians have the experience necessary to ensure a professional repair, installation, and maintenance of your heating and air conditioning system, and the skills needed to ensure the job is done right the first time. You are our first priority, and we are dedicated to your comfort and satisfaction. Contact us today to schedule your service, or a free estimate for a new HVAC system for residential or commercial applications.</p>
+            <p class="links">
+                <a href="#">Furnace Repair Service Areas</a>
+                <a href="#">Air Conditioning Repair Service Areas</a>
+            </p>
+        </div>
+    </div>
+</section>
+
+
+        <!-- Helpful Articles Section -->
+        <section class="helpful-articles">
+            <h2>Helpful Heating and Air Articles</h2>
+            <div class="articles">
+                <!-- First Article -->
+                <article>
+                    <img src="The-Value-of-Design-and-Right-Sizing-by-Arlington-HVAC-Contractors.jpg" alt="HVAC Tips for Troubleshooting Furnaces">
+                    <p>Before the not-so-cold winter arrived in Arlington this year, we were looking at the importance of heating, ventilation, and air conditioning (HVAC) contractors. In this article, we discuss why having your furnace in good working order before the cold hits is vital for your home’s comfort and safety.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <!-- Second Article -->
+                <article>
+                    <img src="Arlington-HVAC-Tips-for-Uneven-Heat.jpg" alt="HVAC Tips for Uneven Heat">
+                    <p>Uneven heat. It may be the No. 1 complaint among Arlington homeowners all winter, no matter how cold it is. Many people who have multi-level homes experience colder temperatures on lower floors and warmer temperatures upstairs. We explore the causes and solutions for this common issue in this article.</p>
+                    <a href="#">Read More</a>
+                </article>
+                <!-- Third Article -->
+                <article>
+                    <img src="Arlington-HVAC-Tips-for-Troubleshooting-Furnaces.jpg" alt="Value of Design and Right Sizing by Arlington HVAC Contractors">
+                    <p>Fortunately for Arlington homeowners, the winter of 2016 has been, for the most part, pretty darn warm (knock on wood). There’s still some cold days ahead, though, and it’s important to ensure that your HVAC system is the right size for your home. In this article, we discuss how proper design and right-sizing of your HVAC system can improve comfort and reduce energy costs.</p>
+                    <a href="#">Read More</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
