@@ -101,7 +101,7 @@ main {
 .service-area-content {
     display: flex;
     flex-direction: row; /* Align content side-by-side */
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
@@ -109,7 +109,7 @@ main {
 
 .service-area-img {
     width: 100%;
-    max-width: 350px; /* Ensure the image has a maximum width */
+    max-width: 300px; /* Ensure the image has a maximum width */
     height: auto;
     border-radius: 8px;
 }
