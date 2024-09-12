@@ -130,7 +130,7 @@ main {
 /* Image Styling */
 .service-area-img {
     width: 50%; /* Image on the left side */
-    max-width: 600px;
+    max-width: 300px;
     border-radius: 8px;
 }
 
