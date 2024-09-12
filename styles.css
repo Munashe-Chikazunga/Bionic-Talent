@@ -1,23 +1,25 @@
 /* General Styling */
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto Slab', serif;
     margin: 0;
     padding: 0;
     background-color: #f5f5f5; /* Light background for overall look */
 }
 
-h1 {
+h1, h2 {
     font-family: 'Roboto Slab', serif;
-    color: #fff; /* Heading color (Red) */
+    color: #ab3c3c; /* Red heading color */
     text-align: center;
+    margin: 20px 0;
+}
+
+h1 {
+    font-size: 36px; /* Larger size for the main heading */
 }
 
 h2 {
-    font-family: 'Roboto Slab', serif;
-    color: #ab3c3c; /* Heading color (Red) */
-    text-align: center;
+    font-size: 28px; /* Sub-heading size */
 }
-
 
 a {
     color: #ab3c3c; /* Link color (Red) */
@@ -32,9 +34,6 @@ a:hover {
 header {
     background-color: #314b57; /* Dark blue/green background */
     padding: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 /* Services Section */
@@ -88,57 +87,37 @@ main {
 
 /* Service Area Section */
 .service-area {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.service-area img {
-    width: 100%;
-    max-width: 600px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-.links a {
-    display: block;
-    margin: 5px 0;
-    color: #ab3c3c; /* Link color */
-}
-
-/* Service Area Section */
-.service-area {
     padding: 20px;
     margin-bottom: 40px;
 }
 
-/* Heading Styling */
 .service-area h2 {
-    font-size: 36px; /* Bigger font size for the heading */
-    color: #ab3c3c;
-    text-align: left; /* Align the heading to the left */
+    text-align: left; /* Left-align the heading */
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
-/* Service Area Content Flexbox */
+/* Flexbox for Service Area Content */
 .service-area-content {
     display: flex;
-    justify-content: space-between;
-    align-items: left;
+    flex-direction: row; /* Align content side-by-side */
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 20px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
 
-/* Image Styling */
 .service-area-img {
-    width: 100%; /* Image on the left side */
-    max-width: 350px;
+    width: 100%;
+    max-width: 350px; /* Ensure the image has a maximum width */
     height: auto;
     border-radius: 8px;
 }
 
-/* Text Styling */
 .service-area-text {
-  flex: 1;
-    text-align: left; /* Right-align the text */
+    flex: 1;
+    padding-left: 20px;
+    text-align: left;
 }
 
 .service-area-text p {
@@ -147,28 +126,14 @@ main {
 }
 
 .links a {
-    display: inline-block;
+    display: block;
     margin: 5px 0;
-    color: #ab3c3c;
+    color: #ab3c3c; /* Red link color */
+    text-decoration: none;
 }
 
 .links a:hover {
     text-decoration: underline;
-}
-
-/* Responsive for smaller screens */
-@media screen and (max-width: 768px) {
-    .service-area-content {
-        flex-direction: column; /* Stack image and text on smaller screens */
-    }
-
-    .service-area-img, .service-area-text {
-        width: 100%; /* Full width for both image and text on small screens */
-    }
-
-    .service-area-text {
-        text-align: left; /* Align text to the left on mobile */
-    }
 }
 
 /* Helpful Articles Section */
@@ -212,13 +177,12 @@ article a {
     color: #ab3c3c; /* Red links in articles */
 }
 
-/* Responsive: Stacking Articles Vertically for Small Screens */
+/* Responsive Design Adjustments */
 @media screen and (max-width: 768px) {
-    .articles {
+    .service-area-content {
         flex-direction: column;
+        align-items: center;
     }
 
-    article {
-        width: 100%;
-    }
-}
+    .service-area-img {
+        max-width: 100%; 
