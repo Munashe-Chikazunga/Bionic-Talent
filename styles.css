@@ -3,12 +3,12 @@ body {
     font-family: 'Roboto Slab', serif;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; /* Light background for overall look */
+    background-color: #f5f5f5; 
 }
 
 h2 {
     font-family: 'Roboto Slab', serif;
-    color: #ab3c3c; /* Red heading color */
+    color: #ab3c3c;
     text-align: left;
     margin: 20px 0;
     font-size: 28px; 
@@ -32,31 +32,29 @@ a:hover {
 /* Header Section */
 header {
    background-color: #314b57;
-    padding: 20px 0;
     display: flex;
-    justify-content: space-between; /* Spacing between icons and map */
-    align-items: center;
+    justify-content: space-around;
     flex-wrap: nowrap;
 }
 
 /* Services Section */
 .services-container {
     display: flex;
-    justify-content: space-between; /* Spacing between service items */
+    justify-content: space-between; 
     align-items: center;
-    flex-wrap: nowrap; /* Prevent wrapping */
-    width: 80%; /* Adjust based on preference */
-    margin: 0;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
 }
 
 .service-item {
     text-align: center;
-    width: 150px; /* Fixed width for consistency */
+    width: 150px;
 }
 
 .service-item img {
     border-radius: 50%;
-    width: 120px; /* Icons size */
+    width: 120px;
     height: 120px;
 }
 
@@ -69,23 +67,21 @@ header {
 
 /* Map Styling */
 .map-container {
-width: 20%; /* Adjust width for map */
+width: 100%; 
  text-align: center;
+display: flex;
 }
 
 .map-container img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
 /* Main Content Styling */
 main {
     max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #ffffff; /* White background for main content */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for content section */
-    border-radius: 8px; /* Rounded corners for a soft look */
+    background-color: #ffffff; 
+    border-radius: 8px;
 }
 
 /* Service Area Section */
@@ -95,31 +91,29 @@ main {
 }
 
 .service-area h2 {
-    text-align: left; /* Left-align the heading */
-    font-size: 32px;
-    margin-bottom: 20px;
+    text-align: left;
+    font-size: 50px;
+    margin-bottom: 5px;
 }
 
 /* Flexbox for Service Area Content */
 .service-area-content {
     display: flex;
-    flex-direction: row; /* Align content side-by-side */
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     gap: 20px;
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    flex-wrap: wrap;
 }
 
 .service-area-img {
     width: 100%;
-    max-width: 350px; /* Ensure the image has a maximum width */
-    height: 200px;
-    border-radius: 8px;
+    max-width: 370px;
+    height: 230px;
 }
 
 .service-area-text {
     flex: 1;
-    padding-left: 20px;
     text-align: left;
 }
 
@@ -131,7 +125,7 @@ main {
 .links a {
     display: block;
     margin: 5px 0;
-    color: #ab3c3c; /* Red link color */
+    color: #ab3c3c;
     text-decoration: none;
 }
 
@@ -149,35 +143,30 @@ main {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: wrap; /* Wrap articles for responsiveness */
+    flex-wrap: wrap;
 }
 
 article {
     flex: 1;
     text-align: left;
-    padding: 10px;
-    background-color: #f5f5f5;
-    max-width: 30%; /* Each article takes up about 30% */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-    border-radius: 8px; /* Rounded corners */
-    margin-bottom: 20px; /* Space between articles on smaller screens */
+    max-width: 30%;
+    margin-bottom: 20px;
 }
 
 article img {
     width: 100%;
     height: auto;
-    border-radius: 4px;
 }
 
 article p {
-    font-size: 14px;
+    font-size: 15px;
     margin: 10px 0;
-    color: #333; /* Darker text for readability */
+    color: #333;
 }
 
 article a {
-    font-weight: bold;
-    color: #ab3c3c; /* Red links in articles */
+    color: #ab3c3c;
+    text-decoration-line: underline;
 }
 
 /* Responsive Design Adjustments */
@@ -189,3 +178,4 @@ article a {
 
     .service-area-img {
         max-width: 100%; 
+    }
