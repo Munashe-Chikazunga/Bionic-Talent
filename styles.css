@@ -15,7 +15,7 @@ h2 {
 }
 
 h1 {
-    font-size: 36px; /* Larger size for the main heading */
+    font-size: 17px; /* Larger size for the main heading */
     color: white;
     text-align: left;
 }
@@ -159,7 +159,7 @@ article img {
 }
 
 article p {
-    font-size: 15px;
+    font-size: 16px;
     margin: 10px 0;
     color: #333;
 }
