@@ -15,13 +15,13 @@ h2 {
 }
 
 h1 {
-    font-size: 17px; /* Larger size for the main heading */
+    font-size: 18px; 
     color: white;
     text-align: left;
 }
 
 a {
-    color: #ab3c3c; /* Link color (Red) */
+    color: #ab3c3c; 
     text-decoration: none;
 }
 
@@ -59,7 +59,7 @@ header {
 }
 
 .service-item p {
-    color: white; /* White text under icons */
+    color: white; 
     margin-top: 10px;
     font-size: 16px;
     font-weight: bold;
