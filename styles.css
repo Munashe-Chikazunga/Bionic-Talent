@@ -31,18 +31,22 @@ a:hover {
 
 /* Header Section */
 header {
-    background-color: #314b57; /* Dark blue/green background */
+   background-color: #314b57;
     padding: 20px 0;
+    display: flex;
+    justify-content: space-between; /* Spacing between icons and map */
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 /* Services Section */
 .services-container {
     display: flex;
-    justify-content: space-around; /* Even spacing between service items */
+    justify-content: space-between; /* Spacing between service items */
     align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    flex-wrap: nowrap; /* Prevent wrapping */
+    width: 80%; /* Adjust based on preference */
+    margin: 0;
 }
 
 .service-item {
@@ -70,7 +74,7 @@ header {
 }
 
 .map-container img {
-    max-width: 100%;
+    width: 20%;
     height: auto;
 }
 
